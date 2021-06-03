@@ -28,8 +28,7 @@ npm i passport express-session passport-local-mongoose passport-google-oauth20 m
   Simple plugin for [Mongoose](https://github.com/LearnBoost/mongoose) which adds a findOrCreate method to models.
 
 ```
-User.findOrCreate({ googleId: profile.id },
-					function(err,user){ return cb(err,user);});
+User.findOrCreate({ googleId: profile.id }, function(err,user){ return cb(err,user);});
 //	조회 후에 없는 값이면 생성하고, 있는 값이면 그 값을 가져옴
 ```
 
